@@ -1,0 +1,17 @@
+table{
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr, td {
+    background-color: Gray;
+    color: white;
+    text-align: center;
+}
+
+td:hover {
+    background-color: darkgray;
+    color: white;
+}
+
