@@ -1,0 +1,44 @@
+body {
+    background: #ff5f6d;
+    background: -webkit-linear-gradient(to right, #555555, #333333);
+    background: linear-gradient(to bottom, #555555, #708090);
+    min-height: 100vh;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333333;
+  color: #708090;
+  text-align: center;
+}
+
+/* Style the header */
+.header {
+
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
