@@ -1,187 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Prebuilt Nation</title>
-        <!-- unused as it is out of scope for current part of project-->
-        <!--<link rel="stylesheet" type="text/css" href="one_page_design.css">-->
-        <!--I know this page should've been portable, but-and I know I was told to plan- I couldn't help my self-->
-        <!-- the good news is that a lot of the stuff on the page can be easily moved over to a css file-->
-    <style>
-body {
-    background: #ff5f6d;
-    background: -webkit-linear-gradient(to right, #6D6D64, #333333);
-    background: linear-gradient(to bottom, #555555, #708090);
-    min-height: 100vh;
-    opacity: 0;
-    transition: opacity 3s;
-}
 
-.header {
-    width:100vw;
-    height:80px;
-    margin-left: -25px;
-    margin-top: -25px;
-    background: #333333;
-    display: block;
-    color: #f1f1f1;
-}
+<head>
+    <meta charset="UTF-8">
+    <title>Prebuilt Nation</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333333;
-    color: #708090;
-    text-align: center;
-}
+</head>
 
-h3 {
-    font-family: Impact;
-    font-size: x-large;
-    font-weight:normal;
-    letter-spacing: 1px;
-}
-
-.module-border-wrap {
-    padding: 1rem;
-    background: linear-gradient(to right, red, purple);
-    padding: 3px;
-    text-align:center;
-}
-
-.module {
-    background: #222;
-    color: white;
-    padding: 2rem;
-    text-align:center;
-}
-
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: grey;
-  background-color: transparent;
-}
-
-a:active {
-  color: black;
-  background-color: transparent;
-}
-    </style>
-    </head>
-    <body onload="document.body.style.opacity='1'">
+<body onload="document.body.style.opacity='1'">
     <!-- header content -->
-        <div>
-            <header>
-                <div class="header" id="myHeader">
-                    <div style="width:800px; height:100%;display:block; margin: 0 auto;">
-                        <h3 style="height:100%;float:left;vertical-align:middle;">Prebuilt Nation</h3>
+    <div>
+        <header>
+            <div class="header" id="myHeader">
+                <div id="header-wrapper">
+                    <h3 id="header-title">Prebuilt Nation</h3>
 
-                        <nav style="float:right;height:100%;vertical-align:middle;">
+                    <nav>
 
-                            <h3 style="float:left;"><a href="#recentBuilds">RECENT BUILDS</a> |&nbsp;</h3> <h3 style="float:left;"><a href="#buildVideo">HOW WE BUILD</a> |&nbsp;</h3> <h3 style="float:left;"><a href="#contact">CONTACT US</a></h3>
+                        <h3 class="title-nav"><a href="#recentBuilds">RECENT BUILDS</a> |&nbsp;</h3>
+                        <h3 class="title-nav"><a href="#buildVideo">HOW WE BUILD</a> |&nbsp;</h3>
+                        <h3 class="title-nav"><a href="#contact">CONTACT US</a></h3>
 
 
-                        </nav>
-                    </div>
+                    </nav>
                 </div>
-            </header>
-            <!-- unused as it is out of scope for current part of project-->
-            <!--<script src="one_page_script.js"></script>-->
-        </div>
+            </div>
+        </header>
+        <!-- unused as it is out of scope for current part of project-->
+        <!--<script src="one_page_script.js"></script>-->
+    </div>
     <!-- end header content -->
     <!--IMAGES AND DESCRIPTIONS-->
-     <div style="text-align:center;padding-top: 10px;">
-            <div class="module-border-wrap"><div class="module">
-                    <div class="table" id="recentBuilds">
-                        <h3>Our recent builds</h3>
+    <div class="images-container">
+        <div class="module-border-wrap">
+            <div class="module">
+                <div class="table" id="recentBuilds">
+                    <h3>Our recent builds</h3>
 
-                            <div style="padding:50px 0px;float:left;flex-wrap:wrap;">
-                                <img src="https://19q7551ambqw2mmar832vpwd-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Titan.png"
-                                     alt="ProtoOne image" style="width:250px;height:250px;border:10px solid #888888;border-radius:25px;background: linear-gradient(to right, #333333, #555555);">
-                                <div style="font-family:sans-serif; font-weight:bold;display:inline-block;vertical-align:top">
-                                    <h3>ProtoOne</h3>
-                                </div>
-                            </div>
-                            <div style="padding:50px 0px;float:right;flex-wrap:wrap;">
-                                <img src="https://www.datocms-assets.com/34299/1622240169-n7-z590-h510i-black-case-kraken-z-liquid-system-hero-low-light.png"
-                                     alt="There was a problem loading the image, please try again." style="width:250px;height:250px;border:10px solid #888888;border-radius:25px;background: linear-gradient(to right, #333333, #555555);">
-                                <div style="font-family:sans-serif; font-weight:bold;display:inline-block;vertical-align:top">
-                                    <h3>Zeus</h3>
-                                </div>
+                    <div class="image">
+                        <img src="https://19q7551ambqw2mmar832vpwd-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Titan.png"
+                            alt="ProtoOne image">
+                        <div class="image-title">
+                            <h3>ProtoOne</h3>
+                        </div>
+                    </div>
 
-                            </div>
+                    <div class="image">
+                        <img src="https://www.datocms-assets.com/34299/1622240169-n7-z590-h510i-black-case-kraken-z-liquid-system-hero-low-light.png"
+                            alt="There was a problem loading the image, please try again.">
+                        <div class="image-title">
+                            <h3>Zeus</h3>
+                        </div>
+
+                    </div>
 
 
-                            <div style="padding:50px 0px;">
+                    <div class="image">
 
-                                <img src="https://19q7551ambqw2mmar832vpwd-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Legacy-2.png"
-                                     alt="There was a problem loading the image, please try again." style="width:250px;height:250px;border:10px solid #888888;border-radius:25px;background: linear-gradient(to right, #333333, #555555);">
+                        <img src="https://19q7551ambqw2mmar832vpwd-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Legacy-2.png"
+                            alt="There was a problem loading the image, please try again.">
 
-                                <div style="font-family:sans-serif;display:inline-block;vertical-align:top">
-                                    <h3>Nimbix</h3>
-                                </div>
+                        <div class="image-title">
+                            <h3>Nimbix</h3>
+                        </div>
 
-                            <div style="padding:50px 0px;">
-                                <img src="https://www.cyberpowerpc.com/images/cs/amethyst_new/cs-450-154_400.png"
-                                     alt="There was a problem loading the image, please try again." style="width:250px;height:250px;border:10px solid #888888;border-radius:25px;background: linear-gradient(to right, #333333, #555555);">
-                                <div style="font-family:sans-serif;display:inline-block;vertical-align:top">
-                                    <h3>Aspiron</h3>
-                                </div>
+                        <div class="image">
+                            <img src="https://www.cyberpowerpc.com/images/cs/amethyst_new/cs-450-154_400.png"
+                                alt="There was a problem loading the image, please try again.">
+                            <div class="image-title">
+                                <h3>Aspiron</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-     </div>
+        </div>
+    </div>
     <!--end images and descriptions-->
 
     <!-- embedded prebuilt video -->
-        <div id="buildVideo" style="text-align:center;font-family:Impact;padding-top: 10px; padding-bottom:0px">
-            <div class="module-border-wrap"><div class="module">
-                <div style="padding-bottom:25px">HOW WE DO OUR BUILDS</div>
+    <div id="buildVideo">
+        <div class="module-border-wrap-inverse">
+            <div class="module">
+                <div>
+                    <h3>HOW WE DO OUR BUILDS</h3>
+                </div>
 
-            <iframe width="720" height="450" src="https://www.youtube.com/embed/OZaFqY8UF6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div></div>
+                <iframe width="720" height="450" src="https://www.youtube.com/embed/OZaFqY8UF6I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
+    </div>
     <!--End prebuilt section, getting this to do anything worth while was NOT fun lol-->
 
     <!-- contact form time!!-->
-        <section>
-            <div id="contact">
+    <section>
+        <div id="contact">
+            <div>
                 <div>
-                     <div style="text-align:center;padding-top: 10px;">
-                        <div class="module-border-wrap"><div class="module">
+                    <div class="module-border-wrap">
+                        <div class="module">
                             <h1>Contact us!</h1>
                             <div>
                                 <h2><span>Get your game on!</span>
-                                <br />Let us do the hard work.
+                                    <br />Let us do the hard work.
                                 </h2>
                                 <p>
                                     Please provide us with your contact info.
                                 </p>
-                                <div>
+                                <div class="contact">
                                     <form action="" method="post">
-                                        <input class="rsvp" type="text" value="First Name"><br><br>
-                                        <input class="rsvp" type="text" value="Last Name"><br><br>
-                                        <input class="rsvp" type="text" value="Email Address"><br><br>
-                                        <input class="rsvp" type="text" value="Phone Number"><br><br>
-                                        <div class ="form-spacer">
+                                        <input class="rsvp" type="text" value="" placeholder="First Name"><br><br>
+                                        <input class="rsvp" type="text" value="" placeholder="Last Name"><br><br>
+                                        <input class="rsvp" type="text" value="" placeholder="Email"><br><br>
+                                        <input class="rsvp" type="text" value="" placeholder="Phone Number"><br><br>
+                                        <div class="form-spacer">
                                             <label class="terms"><a href="">Terms and conditions</a></label>
                                         </div>
-                                        <div>
+                                        <div class="submit">
                                             <br><input type="submit" value="Submit">
                                         </div>
                                     </form>
@@ -191,21 +130,22 @@ a:active {
                     </div>
                 </div>
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
     <!-- end contact form -->
 
     <!-- footer content -->
-        <div style="padding-top:90px;text-align:center">
-            <footer style="text-align:center">
-                <div style="width:800px; height:100%;display:block; margin: 0 auto;">
-                    <p style="text-align:center;vertical-align:middle;">All rights reserved.</p>
-                    <p style="text-align:center;vertical-align:middle;"><a href="https://github.com/PyLawrence">prebuiltnation.com</a></p>
-                </div>
+    <div class="footer-container">
+        <footer>
+            <div>
+                <p>All rights reserved.</p>
+                <p><a href="https://github.com/PyLawrence">prebuiltnation.com</a></p>
+            </div>
 
-            </footer>
-        </div>
+        </footer>
+    </div>
     <!-- end footer content -->
-    </body>
+</body>
+
 </html>
