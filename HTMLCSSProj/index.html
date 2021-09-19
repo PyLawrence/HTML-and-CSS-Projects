@@ -1,184 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Nature Retreat</title>
-        <meta charset="utf-8">
-        <!--Temporary CSS styling for the images so they are uniform in size-->
-        <link rel="stylesheet" href="./CSS/Temp.css">
-    </head>
-    <body>
-        <div>
-            <ul>
-                <a href="#home" id="link"><li>HOME</li></a>
-                <a href="#gallery" id="link"><li>GALLERY</li></a>
-                <a href="#contact" id="link"><li>RESERVATIONS</li></a>
+
+<head>
+    <title>Nature Retreat</title>
+    <meta charset="utf-8">
+    <!--Temporary CSS styling for the images so they are uniform in size-->
+    <link rel="stylesheet" type="text/css" href="./CSS/animations.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/shared.css">
+</head>
+
+<body>
+    <!--nav-->
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <a href="#home">
+                    <li>HOME</li>
+                </a>
+                <a href="#gallery">
+                    <li>GALLERY</li>
+                </a>
+                <a href="#contact">
+                    <li>RESERVATIONS</li>
+                </a>
             </ul>
         </div>
-        
-        <div id="home">
-            <div>
-                <span>The Space Station</span>
+    </div>
+    <!--end nav-->
+
+
+    <!--home-->
+    <div id="home">
+        <div class="container">
+            <div class="text-center">
+                <span class="head-main">WILD RETREAT</span>
             </div>
         </div>
+    </div>
+    <!--end home-->
 
-        <section>
-            <div id="gallery">
-                <h1>Gallery</h1>
-                <div>
-                    <div>
-                        <!--PHOTO_1 CONTAINER-->
-                        <div>
-                            <img src="./Images/Thumbnails/Image_1.jpg" alt="There was a problem loading this awesome image of the forest!<br> 
-                            Please try again later!">
-                            <div>
-                                <h1>Click to Enlarge</h1>
-                                <p>Check out photos from our guests!</p>
-                            </div>
+
+    <!--gallery-->
+    <section id="gallery">
+        <div class="container">
+            <h1>Gallery</h1>
+
+            <div class="flex-container">
+                <!-- IMAGE CONTAINER 1-->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="./Images/Thumbnails/Image_1.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>GO ON RETREAT NOW</p>
                         </div>
                     </div>
-                    <!--END PHOTO_1 CONTAINER-->
-
-                    <!--PHOTO_2 CONTAINER-->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumbnails/Image_2.jpg" alt="There was a problem loading this awesome image of the forest!<br> 
-                            Please try again later!">
-                            <div>
-                                <h1>Click to Enlarge</h1>
-                                <p>Check out photos from our guests!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END PHOTO_2 CONTAINER-->
-
-                    <!--PHOTO_3 CONTAINER-->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumbnails/Image_3.jpg" alt="There was a problem loading this awesome image of the forest!<br> 
-                            Please try again later!">
-                            <div>
-                                <h1>Click to Enlarge</h1>
-                                <p>Check out photos from our guests!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END PHOTO_3 CONTAINER-->
-
-                    <!--PHOTO_4 CONTAINER-->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumbnails/Image_4.jpg" alt="There was a problem loading this awesome image of the forest!<br> 
-                            Please try again later!">
-                            <div>
-                                <h1>Click to Enlarge</h1>
-                                <p>Check out photos from our guests!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END PHOTO_4 CONTAINER-->
-
-                    <!--PHOTO_5 CONTAINER-->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumbnails/Image_5.jpg" alt="There was a problem loading this awesome image of the forest!<br> 
-                            Please try again later!">
-                            <div>
-                                <h1>Click to Enlarge</h1>
-                                <p>Check out photos from our guests!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END PHOTO_5 CONTAINER-->
-
-                    <!--PHOTO_6 CONTAINER-->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumbnails/Image_6.jfif" alt="There was a problem loading this awesome image of the forest!<br> 
-                            Please try again later!">
-                            <div>
-                                <h1>Click to Enlarge</h1>
-                                <p>Check out photos from our guests!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END PHOTO_6 CONTAINER-->
-
-                    <!--PHOTO_7 CONTAINER-->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumbnails/Image_7.jpg" alt="There was a problem loading this awesome image of the forest!<br> 
-                            Please try again later!">
-                            <div>
-                                <h1>Click to Enlarge</h1>
-                                <p>Check out photos from our guests!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END PHOTO_7 CONTAINER-->
-
-                    <!--PHOTO_8 CONTAINER-->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumbnails/Image_8.jpg" alt="There was a problem loading this awesome image of the forest!<br> 
-                            Please try again later!">
-                            <div>
-                                <h1>Click to Enlarge</h1>
-                                <p>Check out photos from our guests!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END PHOTO_8 CONTAINER-->
-
-                    <!--PHOTO_9 CONTAINER-->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumbnails/Image_9.jpg" alt="There was a problem loading this awesome image of the forest!<br>
-                             Please try again later!">
-                            <div>
-                                <h1>Click to Enlarge</h1>
-                                <p>Check out photos from our guests!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--END PHOTO_9 CONTAINER-->
                 </div>
-            </div>
-        </section>
+                <!-- END IMAGE CONTAINER-->
 
-        <section>
-            <div id="contact">
-                <div>
-                    <h1>Reservations</h1>
-                    <div>
-                        <h2><span>Your retreat is just a click away!</span>
+
+                <!-- IMAGE CONTAINER 2-->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="./Images/Thumbnails/Image_2.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>GO ON RETREAT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END IMAGE CONTAINER-->
+
+
+                <!-- IMAGE CONTAINER 3-->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="./Images/Thumbnails/Image_3.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>GO ON RETREAT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END IMAGE CONTAINER-->
+
+
+                <!-- IMAGE CONTAINER 4-->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="./Images/Thumbnails/Image_4.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>GO ON RETREAT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END IMAGE CONTAINER-->
+
+
+                <!-- IMAGE CONTAINER 5-->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="./Images/Thumbnails/Image_5.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>GO ON RETREAT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END IMAGE CONTAINER-->
+
+
+                <!-- IMAGE CONTAINER 6-->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="./Images/Thumbnails/Image_6.jfif" alt="">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>GO ON RETREAT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END IMAGE CONTAINER-->
+
+
+                <!-- IMAGE CONTAINER 7-->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="./Images/Thumbnails/Image_7.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>GO ON RETREAT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END IMAGE CONTAINER-->
+
+
+                <!-- IMAGE CONTAINER 8-->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="./Images/Thumbnails/Image_8.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>GO ON RETREAT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END IMAGE CONTAINER-->
+
+
+                <!-- IMAGE CONTAINER 9-->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="./Images/Thumbnails/Image_9.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>GO ON RETREAT NOW</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END IMAGE CONTAINER-->
+
+
+            </div>
+
+        </div>
+    </section>
+    <!--end gallery-->
+
+
+    <!--RSVP-->
+    <section id="contact">
+        <div class="container">
+            <div class="heading-padding">
+                <h1 class="heading-padding-title">Reservations</h1>
+                <div class="reservation">
+                    <h2><span>Your retreat is just a click away!</span>
                         <br />Reserve your trip today.
-                        </h2>
-                        <p>
-                            Please provide us with your contact info.
-                        </p>
-                        <div>
-                            <form action="" method="post">
-                                <input class="rsvp" type="text" value="First Name">
-                                <input class="rsvp" type="text" value="Last Name">
-                                <input class="rsvp" type="text" value="Email Address">
-                                <input class="rsvp" type="text" value="Phone Number">
-                                <div class ="form-spacer">
-                                    <label class="terms">Terms and conditions</label>
-                                </div>
-                                <div>
-                                    <input type="submit" value="Submit">
-                                </div>
-                            </form>
-                        </div>
+                    </h2>
+                    <p class="rsvp-text">
+                        Please provide us with your basic contact information.
+                    </p>
+                    <div class="form-rsvp">
+                        <form action="" method="post">
+                            <input class="rsvp" type="text" value="" placeholder="First Name">
+                            <input class="rsvp" type="text" value="" placeholder="Last Name">
+                            <input class="rsvp" type="text" value="" placeholder="Email Address">
+                            <input class="rsvp" type="text" value="" placeholder="Phone Number">
+                            <div class="form-spacer">
+                                <label class="terms">Terms and Conditions</label>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <div>
-            <a href="https://github.com/PyLawrence">forestretreats.com&copy;</a>
         </div>
+    </section>
+    <!-- end rsvp-->
 
 
-    </body>
+    <!-- footer-->
+    <div id="footer">
+        www.wildretreat.com &nbsp;|&nbsp; &copy; 2021
+    </div>
+    <!--end footer-->
+
+
+</body>
+
 </html>
