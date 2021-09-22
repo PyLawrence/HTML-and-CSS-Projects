@@ -1,10 +1,12 @@
 # HTML-and-CSS-Projects
 This repo will include content and projects made for the HTML and CSS course at The Tech Academy
 
-## Projectects
+## Projects
 
 -[Prebuilt Computer Site](https://github.com/PyLawrence/HTML-and-CSS-Projects/tree/main/One-Page%20Website)
+
 -[Wild Retreat Site](https://github.com/PyLawrence/HTML-and-CSS-Projects/tree/main/HTMLCSSProj)
+
 -[Movie Theater Site](https://github.com/PyLawrence/HTML-and-CSS-Projects/tree/main/bootstrap4_project)
 
 ### Prebuilt Computers Site
