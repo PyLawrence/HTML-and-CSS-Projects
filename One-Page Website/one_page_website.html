@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Prebuilt Nation</title>
     <link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+    <script src="./JS/one_page_website.js"></script>
 
 </head>
 
@@ -38,7 +39,7 @@
                 <div class="table" id="recentBuilds">
                     <h3>Our recent builds</h3>
 
-                    <div class="image">
+                    <div class="image" onclick="openModal(1)">
                         <img src="https://19q7551ambqw2mmar832vpwd-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Titan.png"
                             alt="ProtoOne image">
                         <div class="image-title">
@@ -46,7 +47,7 @@
                         </div>
                     </div>
 
-                    <div class="image">
+                    <div class="image" onclick="openModal(2)">
                         <img src="https://www.datocms-assets.com/34299/1622240169-n7-z590-h510i-black-case-kraken-z-liquid-system-hero-low-light.png"
                             alt="There was a problem loading the image, please try again.">
                         <div class="image-title">
@@ -56,16 +57,15 @@
                     </div>
 
 
-                    <div class="image">
+                    <div class="image" onclick="openModal(3)">
 
                         <img src="https://19q7551ambqw2mmar832vpwd-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Legacy-2.png"
                             alt="There was a problem loading the image, please try again.">
-
                         <div class="image-title">
                             <h3>Nimbix</h3>
                         </div>
 
-                        <div class="image">
+                        <div class="image" onclick="openModal(4)">
                             <img src="https://www.cyberpowerpc.com/images/cs/amethyst_new/cs-450-154_400.png"
                                 alt="There was a problem loading the image, please try again.">
                             <div class="image-title">
@@ -78,6 +78,35 @@
         </div>
     </div>
     <!--end images and descriptions-->
+
+    <!-- lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides" id="slide1">
+                <img
+                    src="https://19q7551ambqw2mmar832vpwd-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Titan.png">
+            </div>
+
+            <div class="mySlides" id="slide2">
+                <img
+                    src="https://www.datocms-assets.com/34299/1622240169-n7-z590-h510i-black-case-kraken-z-liquid-system-hero-low-light.png">
+            </div>
+
+            <div class="mySlides" id="slide3">
+                <img
+                    src="https://19q7551ambqw2mmar832vpwd-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Legacy-2.png">
+            </div>
+
+            <div class="mySlides" id="slide4">
+                <img src="https://www.cyberpowerpc.com/images/cs/amethyst_new/cs-450-154_400.png">
+                <div class="image-title">
+                    <h3>Aspiron</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- embedded prebuilt video -->
     <div id="buildVideo">
