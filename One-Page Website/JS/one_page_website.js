@@ -15,4 +15,5 @@ function openModal(selected) {
 
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
+    
 }
